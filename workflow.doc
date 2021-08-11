@@ -1,0 +1,37 @@
+mysqljsonschema
+
+CLI- npm install mysql-json-schema --save-dev
+
+dependencies -
+"lodash": "^4.17.21",
+"mysql-json-schema": "^1.2.0"
+
+
+(test-mysqljsonschema.js)
+
+-> provides the json schema for all tables in a database with relations
+-> the .json file saved in the output folder
+
+sequelizeautomaster
+
+CLI - npm install sequelize-auto
+      npm install sequelize 
+      npm install mysql2
+
+dependencies -
+
+"mysql2": "^2.3.0",
+"sequelize": "^6.6.5",
+"sequelize-auto": "^0.8.4"
+
+Terminal:
+
+node_modules/.bin/sequelize-auto -o "./models" -d moodle -h 127.0.0.1 -u root -p 3306 -x  -e mysql
+
+-> the above terminal cli will create .js files with json schema and index for each table 
+   and it will also create init-model.js which contains the code to load each model definition into Sequelize
+
+
+(test-sequelizeautomaster.js)
+
+-> drop the existing table and create a new table, show in
