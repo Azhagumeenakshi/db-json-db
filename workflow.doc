@@ -34,4 +34,4 @@ node_modules/.bin/sequelize-auto -o "./models" -d moodle -h 127.0.0.1 -u root -p
 
 (test-sequelizeautomaster.js)
 
--> drop the existing table and create a new table, show in
+-> drop the existing table and create a new table, show index and insert datas
